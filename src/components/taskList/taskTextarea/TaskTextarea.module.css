@@ -1,0 +1,23 @@
+.textereaButtonNewTask {
+	margin-left: 10px;
+	background-color: rgba(137, 43, 226, 0.356);
+	cursor: pointer;
+}
+
+.textereaButton {
+	margin-right: 2px;
+	cursor: pointer;
+}
+
+.textereaSearch {
+	margin-right: 20px;
+}
+
+.textereaNewTask {
+	margin-left: 20px;
+}
+
+.active {
+	background-color: #0a79008c;
+	cursor: pointer;
+}

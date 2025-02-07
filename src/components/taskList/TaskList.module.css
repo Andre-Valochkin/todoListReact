@@ -1,0 +1,10 @@
+.taskList {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.taskList__wrapper {
+	list-style: none;
+	text-align: center;
+}

@@ -1,0 +1,24 @@
+.task_Item {
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.importantTask {
+	color: #b90000;
+	background-color: #b9000056;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.normalTask {
+	color: #000000;
+	font-size: 14px;
+	font-weight: 100;
+}
+
+.task_Item:has(.task_Item__wrapper.isActiveTask) {
+	background-color: #0a790062;
+}

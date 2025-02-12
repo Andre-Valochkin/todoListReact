@@ -1,12 +1,16 @@
 import s from "./TaskTextarea.module.css";
 
-const TaskTexterea = ({ setFilter, filter, searchQuery, setSearchQuery, addTask, prevText, taxterraHandleChange }) => {
+import { useTasks } from '../../../context.js';
+
+const TaskTexterea = () => {
+
+	const { setFilter, filter, searchQuery, setSearchQuery, addTask, prevText, handleChange } = useTasks();
 
 	return (
 		<>
 			<form className={s.taskTexterea_wrapper} onSubmit={(e) => e.preventDefault()}>
 				<textarea className={s.textereaSearch} value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder="Поиск задачи"></textarea>
-				<textarea className={s.textereaNewTask} value={prevText} onChange={taxterraHandleChange} placeholder="Название новой задачи"></textarea>
+				<textarea className={s.textereaNewTask} value={prevText} onChange={handleChange} placeholder="Название новой задачи"></textarea>
 			</form>
 			<div>
 				<button className={`${s.textereaButton} ${filter === "all" ? s.active : ""}`} onClick={() => setFilter("all")}>Все задачи</button>
